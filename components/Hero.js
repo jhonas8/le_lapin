@@ -3,28 +3,32 @@ import { Container, Row, Col } from 'reactstrap';
 
 const Hero = () => {
   return (
-    <section className="section position-relative" id="home">
+    <section className="section position-relative" id="home" data-aos="zoom-in">
       <Container>
         <Row className="align-items-center">
           <Col lg={6}>
             <div className="pr-lg-5">
-              <p className="text-uppercase text-primary font-weight-medium f-14 mb-4">Lorem Ipsum</p>
+              <p className="text-uppercase font-weight-medium f-14 mb-4">Le Lapin</p>
               <h1 className="mb-4 font-weight-normal line-height-1_4">
-                Simply dummy text of the printing <span className="text-primary font-weight-medium">Name</span>
+                Onde cada mordida é um prazer <span className="font-weight-medium">delicioso!</span>
               </h1>
               <p className="text-muted mb-4 pb-2">
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
-                took a galley of type and scrambled it to make a type specimen book. It has survived not only five
-                centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                Aqui nos especializamos em doces tentadores e sobremesas incríveis, feitos com ingredientes frescos e de
+                alta qualidade. Venha visitar-nos para experimentar nossa culinária sofisticada e um ambiente acolhedor.
               </p>
-              <a href="#" className="btn btn-warning">
-                Find Out How <span className="ml-2 right-icon">&#8594;</span>
+              <a href="https://linktr.ee/LeLapin" className="btn btn-warning">
+                Conheça agora mesmo <span className="ml-2 right-icon">&#8594;</span>
               </a>
             </div>
           </Col>
           <Col lg={6}>
             <div className="mt-5 mt-lg-0">
-              <img src="/images/Group Members.png" alt="" className="img-fluid mx-auto d-block" />
+              <img
+                src="/images/bolo.png"
+                alt=""
+                className="img-fluid mx-auto d-block"
+                style={{ borderRadius: '50%' }}
+              />
             </div>
           </Col>
         </Row>
