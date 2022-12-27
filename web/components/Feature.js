@@ -70,8 +70,8 @@ const Feature = () => {
     {
       id: 1,
       img: './images/box_candy.jpg',
-      title: 'Fidelidade',
-      desc: 'Ganhe pontos por cada valor gasto na loja e os troque por descontos ou produtos.',
+      title: 'Le Las Fãs',
+      desc: 'Ganhe pontos por cada valor gasto na loja e os troque por descontos ou produtos com nosso sistema de fidelidade.',
       link: '/',
     },
     {
