@@ -9,7 +9,8 @@
     "watch": "tsc -w",
     "test": "jest",
     "cdk": "cdk",
-    "deploy": "cdk deploy --all"
+    "deploy": "cdk deploy --all",
+    "deploy:web": "cdk deploy --all -c web-stack-dev"
   },
   "devDependencies": {
     "@types/jest": "^29.2.4",
