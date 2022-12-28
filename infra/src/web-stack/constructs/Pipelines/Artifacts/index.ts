@@ -14,7 +14,7 @@ export class PipelineArtifactsConstruct extends Construct {
         super(scope, id);
 
         this.artifacts = {
-            web_deployment_artifact: new Artifact();
+            web_deployment_artifact: new Artifact(),
         }
     }
 }

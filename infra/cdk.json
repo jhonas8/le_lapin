@@ -21,7 +21,13 @@
       "region": "us-east-1",
       "project_name": "LELAPIN-PROD",
       "backend_branch_name":"main",
-      "table_name":"LELAPIN_TABELA"
+      "table_name":"LELAPIN_TABELA-PROD"
+    },
+    "dev": {
+      "region": "us-east-1",
+      "project_name": "LELAPIN-DEV",
+      "backend_branch_name":"main",
+      "table_name":"LELAPIN_TABELA-DEV"
     },
     "@aws-cdk/aws-lambda:recognizeLayerVersion": true,
     "@aws-cdk/core:checkSecretUsage": true,

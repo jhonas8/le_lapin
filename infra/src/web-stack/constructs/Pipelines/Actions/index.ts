@@ -22,9 +22,9 @@ export class PipelineWebActions extends Construct {
             github_source: new GitHubSourceAction({
                 actionName: 'Github_Source',
                 owner: 'jhonas8',
-                repo: 'le-lapin_front',
+                repo: 'le_lapin',
                 output: props.artifacts_construct.artifacts.web_deployment_artifact,
-                oauthToken: SecretValue.secretsManager('le-lapin').toJSON()['github-token'],
+                oauthToken: SecretValue.secretsManager('le-slapin').toJSON()['github-token'],
                 branch: 'main',
             }),
             deployment: new CodeBuildAction({
