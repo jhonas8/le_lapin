@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
 
@@ -28,9 +29,11 @@ const FeatureBox = (props) => {
                 </div>
                 <h5 className="text-dark font-weight-normal mb-3 pt-3">{feature.title}</h5>
                 <p className="text-muted mb-3 f-15">{feature.desc}</p>
-                <a href={feature.link} className="f-16 text-warning">
-                  Saiba Mais <span className="right-icon ml-2">&#8594;</span>
-                </a>
+                <Link href={feature.link}>
+                  <a className="f-16 text-warning">
+                    Saiba Mais <span className="right-icon ml-2">&#8594;</span>
+                  </a>
+                </Link>
               </div>
             </Col>
           </Row>
@@ -43,9 +46,11 @@ const FeatureBox = (props) => {
                 </div>
                 <h5 className="text-dark font-weight-normal mb-3 pt-3">{feature.title}</h5>
                 <p className="text-muted mb-3 f-15">{feature.desc}</p>
-                <a href={feature.link} className="f-16 text-warning">
-                  Saiba Mais <span className="right-icon ml-2">&#8594;</span>
-                </a>
+                <Link href={feature.link}>
+                  <a className="f-16 text-warning">
+                    Saiba Mais <span className="right-icon ml-2">&#8594;</span>
+                  </a>
+                </Link>
               </div>
             </Col>
             <Col md={{ size: 5, offset: 1 }} className="mt-5 mt-sm-0">
@@ -72,14 +77,14 @@ const Feature = () => {
       img: './images/box_candy.jpg',
       title: 'Fidelidade',
       desc: 'Ganhe pontos por cada valor gasto na loja e os troque por descontos ou produtos.',
-      link: '/',
+      link: '/fidelidade',
     },
     {
       id: 2,
       img: './images/delivery.jpg',
       title: 'Agendamento',
       desc: 'Agende conosco algum produto ou reserve uma mesa.',
-      link: '/',
+      link: '/agendamento',
     },
     // {
     //   id: 3,
